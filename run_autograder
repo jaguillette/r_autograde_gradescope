@@ -6,5 +6,6 @@ cp /autograder/submission/ps1.R /autograder/source/ps1.R
 
 cd /autograder/source
 
+# wget [some server location for autograde_ps1.R]
 
 Rscript autograde_ps1.R 

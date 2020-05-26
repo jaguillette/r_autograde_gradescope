@@ -17,9 +17,17 @@ rm(list = ls())
 
 filename <- "ps1.R" # Assignment file name
 
-json.filename <- "results.json"# "/autograder/results/results.json" # Change to "results.json" when testing locally
-                                                    # Change to "/autograder/results/results.json" when uploading
-                                                    # to Gradescope
+assignment_title_env_var = Sys.getenv(c("ASSIGNMENT_TITLE"))
+# Check for the existence of an environment variable called "ASSIGNMENT_TITLE"
+if(assignment_title_env_var != ""){
+  # If the environment variable is not empty, we're in Gradescope,
+  # so set the output correctly for Gradescope to find it
+  json.filename <- "/autograder/results/results.json"
+}else{
+  # If the environment variable is empty, we're working locally,
+  # so just put the output in this same directory.
+  json.filename <- "results.json"
+}
 
 
 suppressMessages(library(tidyverse))
