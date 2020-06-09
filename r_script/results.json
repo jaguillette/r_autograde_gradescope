@@ -1,0 +1,1 @@
+{"tests":[{"name":"Continents sorted","score":10,"max.score":10,"output":"Test passed\n"},{"name":"Continents not sorted","score":10,"max.score":10,"output":"Test passed\n","visibility":"hidden"}]}

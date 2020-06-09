@@ -1,0 +1,22 @@
+---
+title: "Problem Set 1"
+author: "Test Author"
+output: html_document
+---
+
+# Problem Set 1
+
+This is a demo file.
+
+## Mad libs
+
+```{r ML1, include = FALSE}
+ml1 <- c(1,2,3,4,5,6,7,8,9)
+```
+1. The first answer is ``r ml1``. Super!
+```{r ML2, include = FALSE}
+ml2 <- function(numbers){
+  mean(numbers)+1
+}
+```
+2. The second answer is ``r ml2(ml1)``. Awesome!
